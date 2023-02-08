@@ -43,6 +43,13 @@
         <!-- Mockito Properties -->
         <mockito.version>5.1.1</mockito.version>
 
+        <!-- Sonar Properties -->
+        <sonar.version>3.9.1.2184</sonar.version>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.organization>andrewjfei</sonar.organization>
+        <sonar.projectKey>andrewjfei_jacoco-sonar-cloud-example</sonar.projectKey>
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/module-aggregate/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+
         <!-- Checkstyle Properties -->
         <checkstyle.version>3.2.0</checkstyle.version>
 
@@ -92,6 +99,13 @@
     <build>
         <pluginManagement>
             <plugins>
+                <!-- Sonar -->
+                <plugin>
+                    <groupId>org.sonarsource.scanner.maven</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>${sonar.version}</version>
+                </plugin>
+
                 <!-- Checkstyle -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
