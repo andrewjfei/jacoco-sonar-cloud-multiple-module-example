@@ -18,6 +18,11 @@
     <description>A project generated based on a basic archetype.</description>
     <packaging>jar</packaging>
 
+    <properties>
+        <!-- Sonar Properties -->
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/../module-aggregate/target/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+    </properties>
+
     <dependencies>
         <!-- Logback -->
         <dependency>

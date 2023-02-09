@@ -47,8 +47,6 @@
         <sonar.version>3.9.1.2184</sonar.version>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
         <sonar.organization>andrewjfei</sonar.organization>
-        <sonar.projectKey>andrewjfei_jacoco-sonar-cloud-multiple-module-example</sonar.projectKey>
-        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/module-aggregate/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 
         <!-- Checkstyle Properties -->
         <checkstyle.version>3.2.0</checkstyle.version>

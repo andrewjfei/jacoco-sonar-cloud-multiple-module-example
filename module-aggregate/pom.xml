@@ -18,19 +18,24 @@
     <description>A project generated based on a basic archetype.</description>
     <packaging>jar</packaging>
 
+    <properties>
+        <!-- Sonar Properties -->
+        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+    </properties>
+
     <dependencies>
         <!-- Module One -->
         <dependency>
-            <groupId>${groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>module-one</artifactId>
-            <version>${version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- Module Two -->
         <dependency>
-            <groupId>${groupId}</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>module-two</artifactId>
-            <version>${version}</version>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- Logback -->
